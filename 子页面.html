@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoorood - 售后支持</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FDD000',
+                        secondary: '#3B82F6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'system-ui', 'sans-serif'],  
+                    },  
+                },                                                                                                                            
+            }               
+        } 
+    </script>    
+    <style type="text/tailwindcss">   
+        @layer utilities {
+            .content-auto {  
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50 text-dark">
+<!-- 导航栏 -->
+<header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300" id="navbar">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#" class="flex items-center space-x-2">
+            <div class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-bowl-food text-white text-xl"></i>
+            </div>
+            <span class="text-xl font-bold">Geoorood</span>
+        </a>
+
+        <!-- 合并两个客服按钮到同一容器 -->
+        <div class="flex items-center space-x-4">
+            <!-- TikTok客服按钮（添加a标签链接） -->
+            <a href="https://www.tiktok.com/support" target="_blank" class="hidden md:block">
+                <button class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+                    TikTok在线客服
+                </button>
+            </a>
+            
+            <!-- 亚马逊客服按钮（添加a标签链接） -->
+            <a href="https://sellercentral.amazon.com/support" target="_blank" class="hidden md:block">
+                <button class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+                    亚马逊在线客服
+                </button>
+            </a>
+
+            <!-- 移动端菜单按钮（合并为一个） -->
+            <button class="md:hidden text-dark text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- 英雄区域 -->
+    <section class="bg-gradient-to-r from-primary/10 to-secondary/10 py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-dark">
+                    宠物喂食器 <span class="text-primary">售后支持</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-lg">
+                    我们提供全方位的售后保障，让您使用宠物喂食器更加安心。无论是产品咨询、故障排除还是维修服务，我们的专业团队随时为您提供支持。
+                </p>
+    
+
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://picsum.photos/id/169/600/400" alt="智能宠物喂食器" class="rounded-2xl shadow-2xl max-w-full h-auto transform hover:scale-[1.02] transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+   <!-- 售后问题分类 -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark">常见售后问题</h2>
+            <p class="mt-3 text-gray-600 max-w-2xl mx-auto">我们整理了用户在使用宠物喂食器过程中遇到的常见问题及解决方案，希望能帮助您快速解决问题。</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 问题卡片 1 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-bolt text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Network Configuration Issues</h3>
+                <p class="text-gray-600 mb-4">Check the network configuration settings to ensure the router is working properly and the device is connected correctly.</p>
+                <a href="双碗喂食器QA图/Network-issue工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 2 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-clock text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Out of food issue</h3>
+                <p class="text-gray-600 mb-4">Check the feeder's food compartment to ensure there is sufficient food supply.</p>
+                <a href="双碗喂食器QA图/Out-of-food-issueNetwork-Configuration-Issues工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 3 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-bowl-food text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Network issue</h3>
+                <p class="text-gray-600 mb-4">Check if the Wi-Fi connection is stable, try restarting the router or reconnecting.</p>
+                <a href="双碗喂食器QA图/Network-issue工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 4 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-mobile text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Power issue</h3>
+                <p class="text-gray-600 mb-4">Check the power adapter and cables to ensure the device is properly powered.</p>
+                <a href="双碗喂食器QA图/Power-issue工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 5 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-bell text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Video issue</h3>
+                <p class="text-gray-600 mb-4">Check the camera connection, restart the device or confirm sufficient network bandwidth.</p>
+                <a href="双碗喂食器QA图/Video-issue工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 6 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-wrench text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Functionality issue</h3>
+                <p class="text-gray-600 mb-4">Confirm that the function settings are correct, try restarting the device or updating to the latest firmware.</p>
+                <a href="双碗喂食器QA图/Functionality-issue.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 7 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-lock text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Hardware issue</h3>
+                <p class="text-gray-600 mb-4">Check if there is physical damage to the device hardware, contact customer service for professional inspection.</p>
+                <a href="双碗喂食器QA图/Hardware-issue.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 8 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-battery-quarter text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Motherboard issue</h3>
+                <p class="text-gray-600 mb-4">If there is a motherboard failure, please contact after-sales service for replacement or repair.</p>
+                <a href="双碗喂食器QA图/Motherboard-issue工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 9 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-image text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Software issue</h3>
+                <p class="text-gray-600 mb-4">Try reinstalling the application or updating the device software to the latest version.</p>
+                <a href="双碗喂食器QA图/Software-issue工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 10 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-bell-slash text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Normal behavior</h3>
+                <p class="text-gray-600 mb-4">Confirm whether the current behavior is the normal operating state of the device, refer to the user manual for confirmation.</p>
+                <a href="双碗喂食器QA图/Normal-behavior工厂反馈问题喂食器双婉处理解决方法-英文版.jpg" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+-
+            <!-- 问题卡片 11 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-gear text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">PFI-V Model Installation and Connection Video Tutorial</h3>
+                <p class="text-gray-600 mb-4">Click to view the PFI-V model installation and connection video tutorial.</p>
+                <a href="双碗喂食器QA图/宠物窝.mp4" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- 问题卡片 12 -->
+            <div class="bg-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-100 group">
+                <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all">
+                    <i class="fa-solid fa-trash-can text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">PFI-W Model Installation and Connection Video Tutorial</h3>
+                <p class="text-gray-600 mb-4">Click to view the PFI-W model installation and connection video tutorial.</p>
+                <a href="/support/pfi-w-installation" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                    查看解决方案 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 产品列表区域（预留多个产品位置） -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark">产品售后支持</h2>
+                <p class="mt-3 text-gray-600 max-w-2xl mx-auto">以下是我们提供售后支持的产品系列，点击产品可查看详细的售后信息。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 当前产品卡片 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://picsum.photos/id/169/600/400" alt="智能宠物喂食器 Pro" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold">智能宠物喂食器 Pro</h3>
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">当前产品</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">自动定时定量喂食，APP远程控制，智能监控宠物进食情况</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-sm text-gray-500">上市时间</span>
+                                <p class="font-medium">2024年3月</p>
+                            </div>
+                            <button class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 预留产品卡片 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all border-2 border-dashed border-gray-300 flex flex-col items-center justify-center h-full py-12">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-box-open text-gray-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-400">即将推出</h3>
+                    <p class="text-gray-500 mt-2 text-center max-w-xs">更多产品售后支持正在筹备中，敬请期待</p>
+                </div>
+
+                <!-- 预留产品卡片 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all border-2 border-dashed border-gray-300 flex flex-col items-center justify-center h-full py-12">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-box-open text-gray-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-400">即将推出</h3>
+                    <p class="text-gray-500 mt-2 text-center max-w-xs">更多产品售后支持正在筹备中，敬请期待</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系售后支持 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl p-8 md:p-12 shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+
+                        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">需要更多帮助？</h2>
+                        <p class="text-gray-700 mb-6">如果您无法找到所需的答案，或者遇到了其他问题，请通过以下方式联系我们的售后支持团队，我们将尽快为您提供帮助。</p>
+                        <div class="space-y-4">wu zong zai dui mian 
+
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">电话支持</h4>
+                                    <p class="text-gray-600">400-888-8888</p>
+                                    <p class="text-sm text-gray-500">周一至周日 9:00-21:00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">邮件支持</h4>
+                                    <p class="text-gray-600">support@Geoorood.com</p>
+                                    <p class="text-sm text-gray-500">24小时内回复</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-comments text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">在线客服</h4>
+                                    <p class="text-gray-600">APP内在线客服</p>
+                                    <p class="text-sm text-gray-500">周一至周日 9:00-22:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">提交售后申请</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">姓名</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">邮箱</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all">
+                            </div>
+                            <div class="mb-4">
+                                <label for="product" class="block text-sm font-medium text-gray-700 mb-1">产品型号</label>
+                                <select id="product" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all">
+                                    <option>智能宠物喂食器 Pro</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="problem" class="block text-sm font-medium text-gray-700 mb-1">问题描述</label>
+                                <textarea id="problem" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all"></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-4 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">提交申请</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-bowl-food text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">Geoorood</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">为您的爱宠提供智能、便捷的喂食解决方案，让您的生活与宠物更加和谐。</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fa-brands fa-weibo"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fa-brands fa-wechat"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">快速链接</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">首页</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">产品中心</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">售后服务</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">关于我们</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">支持</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">常见问题</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">使用教程</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">产品说明书</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">保修政策</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">维修网点</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">联系我们</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">北京市海淀区中关村科技园区</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-phone text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">400-888-8888</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-envelope text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">support@Geoorood.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-clock text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">周一至周日 9:00-21:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2024 Geoorood. 保留所有权利。</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">隐私政策</a>
+                        <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">使用条款</a>
+                        <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">Cookie政策</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-3');
+            } else {
+                navbar.classList.add('py-3');
+                navbar.classList.remove('py-2');
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            
+        });
+    </script>
+</body>
+</html>
+    
